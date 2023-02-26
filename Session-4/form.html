@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h2>HTML Form</h2>
+
+    <form>
+        <label>Username: </label>
+        <input type="text" id="username" required placeholder="Enter your name">
+        <br><br>
+        <label>Password: </label>
+        <input type="password" required  placeholder="Enter your password">
+
+        <br><br>
+        <label>Email: </label>
+        <input type="email" id="email">
+        <!-- username@domain.com -->
+
+        <br><br>
+        <label>Mobile: </label>
+        <input type="number">
+
+        <br><br>
+        <label>DOB: </label>
+        <input type="date">
+        <!-- username@domain.com -->
+
+        <br><br>
+        <label>Gender: </label>
+        <input type="radio" value="male" name="gender" checked> Male
+        <input type="radio" value="female" name="gender"> Female
+
+        <br><br>
+        <label>Hobbies: </label>
+        <input type="checkbox" name="hobbies" value="reading" checked> Reading
+        <input type="checkbox" value="writing" name="hobbies"> Writing
+        <input type="checkbox" value="music" name="hobbies"> Music
+        <input type="checkbox" value="gardening" name="hobbies"> Gardening
+        
+        <br><br>
+        <label>Select City: </label>
+        <select>
+            <option value="Select">Select</option>
+            <optgroup label="Aisa">
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value=Srilanka>Srilanka</option>
+            <optgroup label="Europe">
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value=Srilanka>Srilanka</option>
+        <br><br>
+        <label>Address: </label><br><br>
+        <textarea name="address" cols="30" rows="10"></textarea>
+        
+        
+        <br><br>
+        <input type="submit" value="Create Account">
+        <input type="reset" value ="Clear data">
+        <br><br><br><br><br><br>
+        
+
+
+    </form>
+    <button>CLick Me</button>
+    <script>
+
+        
+
+        document.querySelector('button').onclick = function(){
+            var name = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+        console.log(name)
+        console.log(email)
+        }
+    </script>
+</body>
+</html>
