@@ -1,0 +1,21 @@
+/* # ---> id
+. ---> class */
+
+
+#heading2
+{
+    border: 3px solid red;
+    padding: 5px;
+    border-bottom-left-radius: 30px;
+
+}
+
+p 
+{
+    color: green !important;
+}
+/* Box Model have 4 Parts:
+1. Content Itself
+2. Padding
+3. Border
+4. Margin */
