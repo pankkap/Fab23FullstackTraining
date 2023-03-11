@@ -18,8 +18,12 @@ footer
 }
 #banner
 {
+    margin: 10px 0 0 0;
     height: 100vh;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
+    background-image:url("https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?w=826&t=st=1678549568~exp=1678550168~hmac=3359e875bde51cfb48ffaec512098fa0d0fddbcb45ef8a3f23ada37c0e64bfe2");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section-1
