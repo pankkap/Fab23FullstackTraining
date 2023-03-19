@@ -1,6 +1,6 @@
 // variable: It is used to store temporary data in Every Programming Lanuage
 
-var x = 125
+var x = 150
 var y = 73
 var add = x + y
 var sub = x - y
