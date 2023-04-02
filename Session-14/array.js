@@ -88,4 +88,4 @@ console.log(newArr)
 // There is no const array in JS, Javascript can update const array
 const x = [1,2,35]
 x[0] = 10
-console.log(x)
+console.log(x) 
