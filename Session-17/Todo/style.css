@@ -77,3 +77,13 @@ form button:hover
 {
     flex: 1;
 }
+
+.fa-check,.fa-trash
+{
+    pointer-events: none;
+}
+.todo-done
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
