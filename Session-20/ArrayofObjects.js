@@ -22,11 +22,7 @@ var students = [
 // }
 // Iterate array of Objects using For Each
 
-students.forEach((i)=>{
-    console.log("Student Id: ",i.sid)
-    console.log("Student Name: ",i.sname)
-    console.log("Student Grade: ",i.grade)
-})
+students.forEach((i)=>console.log(`Id: ${i.sid} Name: ${i.sname} Grade: ${i.grade}`))
 
 // Assignment-20
 
