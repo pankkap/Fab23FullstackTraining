@@ -1,5 +1,9 @@
-const apiUrl = "https://jsonplaceholder.typicode.com/users"
-
+const apiUrl = "https://api.covid19api.com/summary"
+function displayPhoto(x){
+  var newPhoto = document.createElement('img')
+  newPhoto.src = x;
+  document.body.appendChild(newPhoto)
+}
 
 function getApiData(url)
 {
@@ -9,9 +13,13 @@ function getApiData(url)
       setTimeout(() => {
         fetch(url)
     .then((data)=>{return data.json()})
-    .then((result)=>{console.log(result)})     // When promise resolve
+    .then((result)=>{
+      console.log(result)
+      // console.log(result.photos[0].img_src)
+      // console.log(displayPhoto(result.photos[0].img_src))
+    })     // When promise resolve
     .catch((err)=>{console.log(err)}); 
-      }, 5000);
+      });
 }
 
 // Async- Await functionality

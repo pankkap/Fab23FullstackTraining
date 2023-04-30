@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+    <h1>Local Storage | Session Storage</h1>
+    <label for="">Enter your Name</label>
+    <input type="text" id="uname">
+    <br>
+    <br>
+    <label for="">Enter your Password</label>
+    <input type="password" id="pwd">
+    <br>
+    <br>
+    <label for="">Enter your Email</label>
+    <input type="text" id="email">
+    <br>
+    <br>
+    <button>Store Data</button>
+    <button>Delete Data</button>
+    <br>
+    <br>
+    <a href="detail.html">Show Storage Data</a>
+
+    <script>
+        let storeData = ()=>{
+                let data = {
+                    username: input.value,
+                    password:pwd.value,
+                    email: email.value
+                }
+
+                sessionStorage.setItem("userInfo", JSON.stringify(data))
+                alert("Data stored in Local Storage")
+                input.value = ""
+        }
+        
+        let deleteData = ()=>{
+                sessionStorage.removeItem('username')
+                alert("local storage data removed")
+    
+        }
+
+        let btn = document.querySelector('button')
+        let delbtn = document.querySelectorAll('button')[1]
+        let input = document.querySelector('#uname')
+        let pwd = document.querySelector('#pwd')
+        let email = document.querySelector('#email')
+        btn.onclick = storeData;
+        delbtn.onclick = deleteData;
+
+        
+    </script>
+</body>
+</html>
