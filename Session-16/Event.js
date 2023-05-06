@@ -5,7 +5,7 @@
 
 // First Way
 function myFun(){
-    // alert("Btn is CLicked")
+    alert("Btn is CLicked")
     document.getElementById('div1').style.backgroundColor = "skyblue"
 }
 
