@@ -34,13 +34,13 @@
                     email: email.value
                 }
 
-                sessionStorage.setItem("userInfo", JSON.stringify(data))
+                localStorage.setItem("userInfo", JSON.stringify(data))
                 alert("Data stored in Local Storage")
                 input.value = ""
         }
         
         let deleteData = ()=>{
-                sessionStorage.removeItem('username')
+                localStorage.removeItem('username')
                 alert("local storage data removed")
     
         }
