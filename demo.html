@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function displayAnimation()
+        {
+            console.log("DisplayAnimation function called")
+            setTimeout(() => {
+                document.querySelector('.container').style.display = "none"
+                document.querySelector('.code').style.display = "block"
+            }, 5000);
+        }
+    </script>
+</head>
+<body onload="displayAnimation()">
+    <div class="container">
+        <div class="circle"></div>
+        <p>loading</p>
+    </div>
+    <div class="code">
+        <h2>OOP Code</h2>
+    </div>
+  
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
