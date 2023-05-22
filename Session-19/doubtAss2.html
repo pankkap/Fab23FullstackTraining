@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-19-2</title>
+</head>
+<body>
+    <h2>Assignment-19-2</h2>
+
+    <script>
+        var fname = prompt("Enter FName")
+        var lname = prompt("Enter LName")
+
+        function returnMultipleValue(f,l)
+        {
+            // This is an Object approch to return the multiple value data
+            var name = {}
+            name.value1 = f
+            name.value2= l
+            console.log(name)
+            return name
+        }
+        
+        var result = returnMultipleValue(fname, lname)
+        console.log(result)
+        document.write(result.value1)
+        document.write(result.value2)
+        
+        // result.forEach((i)=>{
+        //     document.write(i)
+        // })
+    </script>
+</body>
+</html>

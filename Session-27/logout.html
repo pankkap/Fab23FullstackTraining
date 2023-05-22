@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+</head>
+
+<body>
+    <h1>Authentication</h1>
+    <p>Welcome, <span id="username"></span></p>
+    <button id="logout">Logout</button>
+
+    <script>
+    
+    let data = JSON.parse( localStorage.getItem("user"))
+    console.log((data))
+    document.querySelector('#username').innerHTML = data.username
+
+// logout button event listener
+    document.getElementById('logout').addEventListener('click', function () {
+    // remove username from localStorage and redirect to login page
+    localStorage.removeItem('user');
+    window.location.href = 'login.html';
+});
+
+    </script>
+
+</body>
+
+</html>
