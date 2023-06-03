@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Print user</h2>
+    <select name="" id="checkUser">
+        <option value="" disabled selected >Select User</option>
+        <option value="admin">Admin</option>
+        <option value="dba">DBA</option>
+        <option value="tester">Tester</option>
+        <option value="guest">User</option>
+    </select>
+    
+    <p></p>
+    <script>
+        const select = document.getElementById('checkUser');
+
+        select.onchange = ()=>{
+            let user = select.value         // by Default it will var and has global scope
+            
+            switch(user)
+            {
+                case 'tester':   document.querySelector('p').innerHTML = "You are a Tester"
+                break
+                case 'admin':   document.querySelector('p').innerHTML = "You are an Admin"
+                break
+                case 'dba':   document.querySelector('p').innerHTML = "You are a Database Administrator"
+                break
+                case 'guest':   document.querySelector('p').innerHTML = "You are a Guest User"
+                break
+
+            }
+            console.log(user)
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

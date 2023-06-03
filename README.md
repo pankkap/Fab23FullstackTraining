@@ -1,1 +1,0 @@
-# Fab23FullstackTraining

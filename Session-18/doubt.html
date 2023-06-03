@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Button</button>
+
+    <script>
+        var btn = document.querySelector('button')
+
+        var arr=[]
+        
+        btn.onclick = function(){
+            var counter = arr.length + 1
+            var h2 = document.createElement('h2')
+            h2.textContent = counter 
+            document.body.appendChild(h2)
+            arr.push(h2)
+            console.log(arr)
+        }   
+         
+    </script>
+</body>
+</html>
+
