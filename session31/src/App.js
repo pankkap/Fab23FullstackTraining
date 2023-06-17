@@ -1,6 +1,10 @@
 import ReactDOM from 'react-dom/client';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Summary from "./components/Summary";
+import StateWithClass from './components/StateManagement/StateWithClass';
+import StateWithHook from './components/StateManagement/StateWithHook';
+import UseStateWithObject from './components/StateManagement/UseStateWithObject';
+import ShowNameOnButtonClick from './components/StateManagement/ShowNameOnButtonClick';
 
 let students = [
   "Krishna",
@@ -41,6 +45,7 @@ function App() {
 
   return (
     <div className="container">
+      {/* <h2 className='bg-danger text-white text-center p-2 my-2'>Student App</h2>
         <table className="table table-hover table-striped">
           <thead>
             <tr>
@@ -60,8 +65,15 @@ function App() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
       {/* <button className="btn btn-primary" onClick={btnClick}>Click Me</button> */}
+
+
+
+      {/* <StateWithClass/> */}
+      {/* <StateWithHook/> */}
+      <UseStateWithObject/>
+      {/* <ShowNameOnButtonClick/> */}
     </div>
   );
 }
