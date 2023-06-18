@@ -5,6 +5,7 @@ import StateWithClass from './components/StateManagement/StateWithClass';
 import StateWithHook from './components/StateManagement/StateWithHook';
 import UseStateWithObject from './components/StateManagement/UseStateWithObject';
 import ShowNameOnButtonClick from './components/StateManagement/ShowNameOnButtonClick';
+import TodoApp from './components/StateManagement/TodoApp';
 
 let students = [
   "Krishna",
@@ -72,8 +73,9 @@ function App() {
 
       {/* <StateWithClass/> */}
       {/* <StateWithHook/> */}
-      <UseStateWithObject/>
+      {/* <UseStateWithObject/> */}
       {/* <ShowNameOnButtonClick/> */}
+      <TodoApp/>
     </div>
   );
 }
