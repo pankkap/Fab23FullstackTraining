@@ -6,6 +6,9 @@ import StateWithHook from './components/StateManagement/StateWithHook';
 import UseStateWithObject from './components/StateManagement/UseStateWithObject';
 import ShowNameOnButtonClick from './components/StateManagement/ShowNameOnButtonClick';
 import TodoApp from './components/StateManagement/TodoApp';
+import CompLifeCycle from './components/StateManagement/CompLifeCycle';
+import UseEffectDemo from './components/StateManagement/UseEffectDemo';
+import TextAnalyzer from './components/StateManagement/TextAnalyzer';
 
 let students = [
   "Krishna",
@@ -75,7 +78,10 @@ function App() {
       {/* <StateWithHook/> */}
       {/* <UseStateWithObject/> */}
       {/* <ShowNameOnButtonClick/> */}
-      <TodoApp/>
+      {/* <TodoApp/> */}
+      {/* <CompLifeCycle/> */}
+      {/* <UseEffectDemo/> */}
+      <TextAnalyzer heading="Text-Checker"/>
     </div>
   );
 }
