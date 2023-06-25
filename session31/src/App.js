@@ -9,6 +9,7 @@ import TodoApp from './components/StateManagement/TodoApp';
 import CompLifeCycle from './components/StateManagement/CompLifeCycle';
 import UseEffectDemo from './components/StateManagement/UseEffectDemo';
 import TextAnalyzer from './components/StateManagement/TextAnalyzer';
+import SocialPostApp from './components/StateManagement/SocialPostApp';
 
 let students = [
   "Krishna",
@@ -81,7 +82,8 @@ function App() {
       {/* <TodoApp/> */}
       {/* <CompLifeCycle/> */}
       {/* <UseEffectDemo/> */}
-      <TextAnalyzer heading="Text-Checker"/>
+      {/* <TextAnalyzer heading="Text-Checker"/> */}
+      <SocialPostApp/>
     </div>
   );
 }
