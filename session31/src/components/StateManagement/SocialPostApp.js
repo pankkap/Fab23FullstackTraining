@@ -135,7 +135,7 @@ export default function SocialPostApp() {
         </tr>
       </thead>
       <tbody>
-        {posts &&
+        {posts ?
           // posts && is used here for conditional rendering
           posts.map((post, i) => (
             <tr key={i}>
@@ -149,7 +149,10 @@ export default function SocialPostApp() {
                 <button className="btn btn-success btn-sm" onClick={()=>deletePost(post)}>Delete</button>
               </td>
             </tr>
-          ))}
+          )):<tr>
+            <td>Loading...!!</td>
+          </tr>
+          }
       </tbody>
     </table>
       }
