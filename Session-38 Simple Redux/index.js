@@ -1,3 +1,5 @@
+// ES5 way of using Libraries
+
 const redux = require("redux");
 const createStore = redux.createStore;
 const combinedReducers = redux.combineReducers;

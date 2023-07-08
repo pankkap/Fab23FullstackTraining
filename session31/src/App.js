@@ -11,6 +11,12 @@ import UseEffectDemo from './components/StateManagement/UseEffectDemo';
 import TextAnalyzer from './components/StateManagement/TextAnalyzer';
 import SocialPostApp from './components/StateManagement/SocialPostApp';
 
+import { Provider } from 'react-redux';
+import store from './components/store';
+import CakeContainer1 from './components/CakeContainer1';
+import CakeContainer2 from './components/CakeContainer2';
+
+
 let students = [
   "Krishna",
   "Fatima",
@@ -83,7 +89,19 @@ function App() {
       {/* <CompLifeCycle/> */}
       {/* <UseEffectDemo/> */}
       {/* <TextAnalyzer heading="Text-Checker"/> */}
-      <SocialPostApp/>
+      {/* <SocialPostApp/> */}
+      
+      <Provider store={store}>
+        <CakeContainer1/>
+     
+        
+        <hr />
+        <CakeContainer2/>
+      </Provider>
+      
+      
+
+
     </div>
   );
 }
