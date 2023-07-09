@@ -15,6 +15,9 @@ import { Provider } from 'react-redux';
 import store from './components/store';
 import CakeContainer1 from './components/CakeContainer1';
 import CakeContainer2 from './components/CakeContainer2';
+import CounterContainer from './components/CounterContainer';
+import WithhoutCotextAPI from './components/WithhoutCotextAPI';
+import WithCotextAPI from './components/WithContextApi';
 
 
 let students = [
@@ -91,14 +94,14 @@ function App() {
       {/* <TextAnalyzer heading="Text-Checker"/> */}
       {/* <SocialPostApp/> */}
       
-      <Provider store={store}>
-        <CakeContainer1/>
-     
-        
+      {/* <Provider store={store}> */}
+        {/* <CakeContainer1/>
         <hr />
-        <CakeContainer2/>
-      </Provider>
-      
+        <CakeContainer2/> */}
+        {/* <CounterContainer/> */}
+      {/* </Provider> */}
+      {/* <WithhoutCotextAPI/> */}
+      <WithCotextAPI/>
       
 
 
