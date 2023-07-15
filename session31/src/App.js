@@ -1,108 +1,34 @@
-import ReactDOM from 'react-dom/client';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import Summary from "./components/Summary";
-import StateWithClass from './components/StateManagement/StateWithClass';
-import StateWithHook from './components/StateManagement/StateWithHook';
-import UseStateWithObject from './components/StateManagement/UseStateWithObject';
-import ShowNameOnButtonClick from './components/StateManagement/ShowNameOnButtonClick';
 import TodoApp from './components/StateManagement/TodoApp';
-import CompLifeCycle from './components/StateManagement/CompLifeCycle';
-import UseEffectDemo from './components/StateManagement/UseEffectDemo';
 import TextAnalyzer from './components/StateManagement/TextAnalyzer';
 import SocialPostApp from './components/StateManagement/SocialPostApp';
-
-import { Provider } from 'react-redux';
-import store from './components/store';
-import CakeContainer1 from './components/CakeContainer1';
-import CakeContainer2 from './components/CakeContainer2';
-import CounterContainer from './components/CounterContainer';
-import WithhoutCotextAPI from './components/WithhoutCotextAPI';
-import WithCotextAPI from './components/WithContextApi';
-
-
-let students = [
-  "Krishna",
-  "Fatima",
-  "Pratiksha",
-  "chandershekhar",
-  "Vinod",
-  "Santosh",
-  "Surya Kumar",
-  "Luxmi Yadav"
-];
-
+import Menu from './components/Menu';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Posts from './components/Pages/Posts';
+import PageNotFound from './components/Pages/PageNotFound';
 function App() {
-
-  function reverseNames(){
-    console.log("btn Clicked")
-    students.reverse()
-    console.log(students)
-
-    // for Manual rendering because we are not implementing State Management
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render( <App />);
-  }
-
-// let x = [1,2,3]
-// x = [5,...x]
-//   console.log(x) [5,1,2,3] 
-
-  function promoteName(name){
-  //  console.log("promote ", name)
-
-    students = [name, ...students.filter((stu)=> stu !== name)]
-    // console.log(students)  
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render( <App />);
-  }
-
 
   return (
     <div className="container">
-      {/* <h2 className='bg-danger text-white text-center p-2 my-2'>Student App</h2>
-        <table className="table table-hover table-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Character</th>
-              <th scope="col" colSpan={2} className='text-center'>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {students.map((student, i) => (
-              <tr key={i}>
-                <Summary name={student} index={i} 
-                callbackReverse={reverseNames}  
-                callbackPomote={promoteName} 
-                />
-              </tr>
-            ))}
-          </tbody>
-        </table> */}
-      {/* <button className="btn btn-primary" onClick={btnClick}>Click Me</button> */}
-
-
-
-      {/* <StateWithClass/> */}
-      {/* <StateWithHook/> */}
-      {/* <UseStateWithObject/> */}
-      {/* <ShowNameOnButtonClick/> */}
-      {/* <TodoApp/> */}
-      {/* <CompLifeCycle/> */}
-      {/* <UseEffectDemo/> */}
-      {/* <TextAnalyzer heading="Text-Checker"/> */}
-      {/* <SocialPostApp/> */}
-      
-      {/* <Provider store={store}> */}
-        {/* <CakeContainer1/>
-        <hr />
-        <CakeContainer2/> */}
-        {/* <CounterContainer/> */}
-      {/* </Provider> */}
-      {/* <WithhoutCotextAPI/> */}
-      <WithCotextAPI/>
-      
+      {/* Single Page Application */}
+      <BrowserRouter>
+      {/* Menu should be outside the Routes, because it will visible on every page */}
+      <Menu/>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/posts' element={<Posts/>} />
+        <Route path="*" element={<PageNotFound/>} />
+        
+        {/* Other apps will also render simultaneously  */}
+        <Route path='/todo' element={<TodoApp/>} />
+        <Route path='/text' element={<TextAnalyzer/>} />
+        <Route path='/social' element={<SocialPostApp/>} />
+      </Routes>
+      </BrowserRouter>   
 
 
     </div>
