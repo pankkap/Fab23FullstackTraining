@@ -2,28 +2,111 @@
   "posts": [
     {
       "id": 1,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
       "title": "new title",
       "body": "new body"
     },
     {
       "id": 2,
+      "latest": false,
+      "oldest": true,
+      "liked": false,
+      "disliked": true,
       "title": "new created body",
       "body": "new created title"
     },
     {
       "id": 3,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
       "title": "hello this is new body",
       "body": "hi this is new title"
     },
     {
       "id": 4,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
       "title": "This session is on CRUD Application using AXIOS and JSON-Server",
       "body": "React Training"
     },
     {
       "id": 5,
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": true,
       "title": "new App ",
       "body": "new Body 15 July 2023"
+    },
+    {
+      "id": 6,
+      "latest": true,
+      "oldest": false,
+      "liked": true,
+      "disliked": false,
+      "title": "React Router",
+      "body": "Accessing Individual Post using the concept called useParams (Route Parameters)"
+    },
+    {
+      "title": "Nested Routes",
+      "body": "We are doing nested Routes means routes within parent route",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 7
+    },
+    {
+      "title": "testing latest route",
+      "body": "we are doing this using UseNavigate Hook",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 8
+    },
+    {
+      "title": "abc",
+      "body": "abc ",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 9
+    },
+    {
+      "title": "abc",
+      "body": "xyzq",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 10
+    },
+    {
+      "title": "djfbdbnm",
+      "body": "bdnsdbnmsb",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 11
+    },
+    {
+      "title": "ghgh",
+      "body": "jkjkjk",
+      "latest": true,
+      "oldest": false,
+      "liked": false,
+      "disliked": false,
+      "id": 12
     }
   ]
 }

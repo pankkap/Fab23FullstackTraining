@@ -28,18 +28,17 @@ export default function Menu() {
               <Link className="nav-link" to="/about">
                 About
               </Link>
-              <Link className="nav-link" to="/posts">
-                Posts
+              <Link className="nav-link" to="/allposts">
+                AllPosts
               </Link>
-              <Link className="nav-link" to="/todo">
-                Todo
+              <Link className="nav-link" to="/nestedPosts">
+                NestedPosts
               </Link>
-              <Link className="nav-link" to="/text">
-                TextAnalyzer
+              <Link className="nav-link" to="/newPost">
+                New Post
               </Link>
-              <Link className="nav-link" to="/social">
-                SocialPost
-              </Link>
+             
+
               
             </div>
           </div>

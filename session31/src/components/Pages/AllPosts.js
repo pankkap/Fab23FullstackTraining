@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
-export default function Posts() {
+export default function AllPosts() {
   // create state to store API Data
   const [posts, setposts] = useState();
    // Fetching API Data in the Background using UseEffect Hook
@@ -28,8 +29,7 @@ export default function Posts() {
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Title</th>
-          <th scope="col">Body</th>
-          <th scope="col" colSpan={2} className="text-center">Actions</th>
+         
         </tr>
       </thead>
       <tbody>
@@ -37,9 +37,11 @@ export default function Posts() {
           // posts && is used here for conditional rendering
           posts.map((post, i) => (
             <tr key={i}>
-              <td>{post.id}</td>
+              <td>
+                <Link to ={`/allposts/${post.id}`}>{post.id}</Link>
+              </td>
               <td>{post.title}</td>
-              <td>{post.body}</td>              
+                         
             </tr>
           )):<tr>
             <td>Loading...!!</td>
