@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
-export default function OldestPosts() {
+export default function DislikedPosts() {
     const [posts, setposts] = useState();
     // Fetching API Data in the Background using UseEffect Hook
   useEffect(() => {
@@ -9,7 +9,7 @@ export default function OldestPosts() {
       .get("http://127.0.0.1:3003/posts")
       .then((res) => {
         let postData = res.data
-        postData = postData.filter((post)=>post.oldest==true && post.latest == false)
+        postData = postData.filter((post)=>post.liked==false && post.disliked == true)
         setposts(postData)
       })
       .catch((err) => console.log(err));

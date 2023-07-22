@@ -38,17 +38,17 @@
     },
     {
       "id": 5,
-      "latest": true,
-      "oldest": false,
-      "liked": false,
-      "disliked": true,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
       "title": "new App ",
       "body": "new Body 15 July 2023"
     },
     {
       "id": 6,
-      "latest": true,
-      "oldest": false,
+      "latest": false,
+      "oldest": true,
       "liked": true,
       "disliked": false,
       "title": "React Router",
@@ -57,56 +57,109 @@
     {
       "title": "Nested Routes",
       "body": "We are doing nested Routes means routes within parent route",
-      "latest": true,
-      "oldest": false,
-      "liked": false,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
       "disliked": false,
       "id": 7
     },
     {
       "title": "testing latest route",
       "body": "we are doing this using UseNavigate Hook",
-      "latest": true,
-      "oldest": false,
-      "liked": false,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
       "disliked": false,
       "id": 8
     },
     {
       "title": "abc",
       "body": "abc ",
-      "latest": true,
-      "oldest": false,
-      "liked": false,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
       "disliked": false,
       "id": 9
     },
     {
       "title": "abc",
       "body": "xyzq",
-      "latest": true,
-      "oldest": false,
+      "latest": false,
+      "oldest": true,
       "liked": false,
-      "disliked": false,
+      "disliked": true,
       "id": 10
     },
     {
       "title": "djfbdbnm",
       "body": "bdnsdbnmsb",
-      "latest": true,
-      "oldest": false,
-      "liked": false,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
       "disliked": false,
       "id": 11
     },
     {
       "title": "ghgh",
       "body": "jkjkjk",
-      "latest": true,
-      "oldest": false,
-      "liked": false,
+      "latest": false,
+      "oldest": true,
+      "liked": true,
       "disliked": false,
       "id": 12
-    }
+    },
+    {
+      "title": "There is new title ",
+      "body": "body dated session 43",
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
+      "id": 13
+    },
+    {
+      "title": "testing liked Post",
+      "body": "testing liked Post",
+      "latest": false,
+      "oldest": true,
+      "liked": true,
+      "disliked": false,
+      "id": 14
+    },
+    {
+      "title": "testing disliked post",
+      "body": "testing disliked post",
+      "latest": false,
+      "oldest": true,
+      "liked": false,
+      "disliked": true,
+      "id": 15
+    },
+    {
+      "title": "new data",
+      "body": "new body",
+      "latest": false,
+      "oldest": true,
+      "liked": false,
+      "disliked": true,
+      "id": 16
+    } ],
+    
+    
+    "users":[
+      {
+        "id":1,
+        "email":"admin@123.com",
+        "password":"admin123",
+        "name":"Admin",
+        "role":"Author"
+      },
+      {
+        "id":2,
+        "email":"guest@123.com",
+        "password":"guest123",
+        "name":"Guest",
+        "role":"Visitor"
+      }
   ]
 }

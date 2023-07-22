@@ -12,6 +12,7 @@ import PostDetails from "./components/Pages/PostDetails";
 import AllPosts from "./components/Pages/AllPosts";
 import NestedPosts from "./components/Pages/NestedPosts";
 import AddNewPost from "./components/Pages/AddNewPost";
+import Login from "./components/Pages/Login";
 function App() {
 
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/text' element={<TextAnalyzer/>} />
         <Route path='/social' element={<SocialPostApp/>} />
         <Route path='/newPost' element={<AddNewPost/>} />
+        <Route path='/login' element={<Login/>} />
 
       </Routes>
       </BrowserRouter>   

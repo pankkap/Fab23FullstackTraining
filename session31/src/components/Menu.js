@@ -6,8 +6,8 @@ export default function Menu() {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            MyProject
+          <Link className="navbar-brand bg-info p-1"  to="/">
+            Social App
           </Link>
           <button
             className="navbar-toggler"
@@ -36,6 +36,9 @@ export default function Menu() {
               </Link>
               <Link className="nav-link" to="/newPost">
                 New Post
+              </Link>
+              <Link className="nav-link" to="/login">
+                Login
               </Link>
              
 
