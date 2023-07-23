@@ -9,7 +9,7 @@ export default function LatestPosts() {
     function getLatestPostData()
     {
       axios
-      .get("http://127.0.0.1:3003/posts")
+      .get("https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts")
       .then((res) => {
         let postData = res.data
         postData = postData.filter((post)=>post.oldest==false && post.latest == true)
@@ -32,7 +32,7 @@ export default function LatestPosts() {
 
   // Now we also update the database
 
-  axios.put(`http://127.0.0.1:3003/posts/${post.id}`, post)
+  axios.put(`https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts/${post.id}`, post)
   .then(()=>{
     getLatestPostData();
   })
@@ -48,7 +48,7 @@ const dislikePost = (post)=>{
 
   // Now we also update the database
 
-  axios.put(`http://127.0.0.1:3003/posts/${post.id}`, post)
+  axios.put(`https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts/${post.id}`, post)
   .then(()=>{
     getLatestPostData();
   })

@@ -11,7 +11,7 @@ const navigate =    useNavigate()
     })
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:3003/users')
+        axios.get('https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/users')
         .then((res)=>setusers(res.data))
         .catch((err)=>console.log(err))
     },[])
@@ -42,6 +42,10 @@ const navigate =    useNavigate()
         {
             alert("You have no Access! Register yourself")
         }
+    }
+    function RegisterProcess()
+    {
+      navigate('/register')
     }
   return (
     <div className="container">
@@ -80,7 +84,7 @@ const navigate =    useNavigate()
         <button
           type="button"
           className="btn btn-primary m-2 "
-        //   onClick={RegisterProcess}
+          onClick={RegisterProcess}
         >
           Register
         </button>

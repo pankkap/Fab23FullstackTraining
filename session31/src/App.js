@@ -13,6 +13,7 @@ import AllPosts from "./components/Pages/AllPosts";
 import NestedPosts from "./components/Pages/NestedPosts";
 import AddNewPost from "./components/Pages/AddNewPost";
 import Login from "./components/Pages/Login";
+import RegisterUser from "./components/Pages/RegisterUser";
 function App() {
 
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/social' element={<SocialPostApp/>} />
         <Route path='/newPost' element={<AddNewPost/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<RegisterUser/>} />
 
       </Routes>
       </BrowserRouter>   

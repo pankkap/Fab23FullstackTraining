@@ -143,23 +143,43 @@
       "liked": false,
       "disliked": true,
       "id": 16
-    } ],
-    
-    
-    "users":[
-      {
-        "id":1,
-        "email":"admin@123.com",
-        "password":"admin123",
-        "name":"Admin",
-        "role":"Author"
-      },
-      {
-        "id":2,
-        "email":"guest@123.com",
-        "password":"guest123",
-        "name":"Guest",
-        "role":"Visitor"
-      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@123.com",
+      "password": "admin123",
+      "name": "Admin",
+      "role": "Author"
+    },
+    {
+      "id": 2,
+      "email": "guest@123.com",
+      "password": "guest123",
+      "name": "Guest",
+      "role": "Visitor"
+    },
+    {
+      "email": "pankaj@123.com",
+      "password": "pankaj123",
+      "name": "Pankaj",
+      "role": "Visitor",
+      "id": 3
+    },
+    {
+      "email": "vinod@123.com",
+      "password": "vinod123",
+      "name": "Vinod",
+      "role": "Visitor",
+      "id": 4
+    },
+    {
+      "email": "fatima@123.com",
+      "password": "fatima123",
+      "name": "fatima ",
+      "role": "Visitor",
+      "id": 5
+    }
   ]
 }

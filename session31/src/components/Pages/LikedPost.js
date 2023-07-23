@@ -6,7 +6,7 @@ export default function LikedPosts() {
     // Fetching API Data in the Background using UseEffect Hook
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:3003/posts")
+      .get("https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts")
       .then((res) => {
         let postData = res.data
         postData = postData.filter((post)=>post.liked==true && post.disliked == false)
