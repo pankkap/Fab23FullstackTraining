@@ -16,7 +16,7 @@ export default function AddNewPost() {
 
   function CreateNewPost() {
     axios
-      .post(`https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts`, newPost)
+      .post(`http://localhost:4000/notes`, newPost)
       .then((res) => alert("New Post Created"))
       .catch((err) => console.log(err));
 

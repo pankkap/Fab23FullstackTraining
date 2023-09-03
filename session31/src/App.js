@@ -14,6 +14,8 @@ import NestedPosts from "./components/Pages/NestedPosts";
 import AddNewPost from "./components/Pages/AddNewPost";
 import Login from "./components/Pages/Login";
 import RegisterUser from "./components/Pages/RegisterUser";
+import CakeContext from "./components/CakeContext";
+import UseRefDemo from "./components/UseRefDemo";
 function App() {
 
   return (
@@ -24,7 +26,7 @@ function App() {
       <Menu/>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path='/home' element={<Home/>} />
+        <Route path='/home' element={<UseRefDemo/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/allposts' element={<AllPosts/>} />
         <Route path='/allposts/:id' element={<PostDetails/>} />
@@ -42,6 +44,7 @@ function App() {
       </Routes>
       </BrowserRouter>   
 
+      
 
     </div>
   );

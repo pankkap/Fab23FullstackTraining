@@ -9,8 +9,8 @@ export default function PostDetails() {
 
     useEffect(()=>{
         axios
-        .get(`https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts/${id}`)
-        .then((res)=>setpost(res.data))
+        .get(`http://localhost:4000/notes/${id}`)
+        .then((res)=>setpost(res.data.notes))
         .catch(err=>console.log(err))
     },[])
     // console.log(post)

@@ -8,10 +8,10 @@ export default function AllPosts() {
    // Fetching API Data in the Background using UseEffect Hook
   useEffect(() => {
     axios
-      .get("https://my-json-server.typicode.com/pankkap/Fab23FullstackTraining_Database/posts")
+      .get("http://localhost:4000/notes")
       .then((res) =>{
         console.log(res)
-         setposts(res.data)
+         setposts(res.data.notes)
         })
       .catch((err) => console.log(err));
   }, []); // [] will work like ComponentDidMount() and runs only once
